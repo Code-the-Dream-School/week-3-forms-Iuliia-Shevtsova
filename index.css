@@ -5,10 +5,12 @@
 body{
   margin: 0;
   padding: 0;
+  background: darkblue;
 }
 
 .backimg {
-  background: darkblue;
+  background: linear-gradient(to top, darkblue ,rgba(226, 225, 235, 0.4));
+
 }
 
 input,
@@ -19,3 +21,12 @@ textarea {
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 }
 
+img {
+  padding: 5px;
+  width: 24px;
+}
+
+form[button] {
+  display: block;
+  width: 50px;
+}

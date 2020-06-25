@@ -13,6 +13,7 @@
       <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    
     </head>
     <body>
   
@@ -38,46 +39,98 @@
               </button>
             </div>
             <div class="modal-body">
-            <!-- registrarion form-->
-            <form>
-              <div class="form-group">
-                <div class="row">
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="Name">
-                  </div>
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="Last name">
-                  </div>
-                </div>
-              </div>
-  
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Format: 1234567890">
-              </div>
-  
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="name@example.com">
-              </div>
-  
-              <div class="form-group">
-                <input type="date" class="form-control" id="date" name="date" placeholder="Date" required>
-              </div>
-  
-              <div class="form-group">
-                <div class="row">
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="10:00 AM">
-                  </div>
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="1 persone">
+              <!-- registrarion form-->
+              <form>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Last name">
+                    </div>
                   </div>
                 </div>
-              </div>
-          </form>
-            <!-- registrarion form-->
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-outline-primary">Save changes</button>
+  
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">
+                      <img for="phone" src="icons/phone.svg">
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" id="phone" placeholder="Format: 1234567890" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+  
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">
+                      <img for="email" src="icons/email.png">
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" id="email" placeholder="name@example.com" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+  
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">
+                      <img for="date" src="icons/calendar.png">
+                    </span>
+                  </div>
+                  <input type="date" class="form-control" id="date" placeholder="dd/mm/2020" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+  
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">
+                            <img for="time" src="icons/clock.svg">
+                          </span>
+                        </div>
+  
+                        <select id="position" class="custom-select">
+                          <option value="10:00 AM">10:00 AM</option>
+                          <option value="10:00 AM">10:30 AM</option>
+                          <option value="10:00 AM">11:00 AM</option>
+                          <option value="10:00 AM">11:30 AM</option>
+                          <option value="10:00 AM">12:00 PM</option>
+                          <option value="10:00 AM">12:30 PM</option>
+                          <option value="10:00 AM">01:00 PM</option>
+                          <option value="10:00 AM">01:30 PM</option>
+                          <option value="10:00 AM">02:00 PM</option>
+                          <option value="10:00 AM">02:30 PM</option>
+                          <option value="10:00 AM">03:00 PM</option>
+                          <option value="10:00 AM">03:30 PM</option>
+                        </select>
+                      </div>
+                    </div>
+  
+                    <div class="col">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">
+                            <img for="person" src="icons/person.svg">
+                          </span>
+                        </div>
+                        <select id="person" class="custom-select">
+                            <option value="10:00 AM">1 persone</option>
+                            <option value="10:00 AM">2 people</option>
+                            <option value="10:00 AM">3 people</option>
+                            <option value="10:00 AM">4 people</option>
+                            <option value="10:00 AM">5 people</option>
+                            <option value="10:00 AM">6 people</option>
+                            <option value="10:00 AM">7 people</option>
+                            <option value="10:00 AM">8 people</option>
+                            <option value="10:00 AM">9 people</option>
+                            <option value="10:00 AM">10 people</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  <button type="button" class="btn btn-outline-primary mx-auto">Save changes</button>
+              </form><!-- registrarion form-->
             </div>
           </div>
         </div>
@@ -169,12 +222,9 @@
                     <label class="custom-file-label" for="upload">Choose file</label>
                   </div>
                 </div>
-  
+                  <button type="button" class="btn btn-outline-primary px-5">Send</button>
               </form><!-- registrarion form-->
-            </div>
-            <div class="modal-footer mr-auto">
-              <button type="button" class="btn btn-outline-primary">Send</button>
-          </div>
+            </div>  
         </div>
       </div>
       <!-- Modal application form-->
